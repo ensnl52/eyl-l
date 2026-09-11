@@ -1,0 +1,507 @@
+.admin-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(120, 50, 255, 0.12), transparent 30%),
+    #060914;
+  color: white;
+}
+
+/* SOL MENÜ */
+
+.admin-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(8, 13, 27, 0.95);
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.admin-logo-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #9b32ff, #315cff);
+  font-weight: 900;
+}
+
+.admin-logo strong {
+  display: block;
+  font-size: 12px;
+}
+
+.admin-logo span {
+  display: block;
+  margin-top: 3px;
+  color: #727b93;
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+/* MENÜ */
+
+.admin-menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-menu-item {
+  width: 100%;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #788198;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.admin-menu-item:hover,
+.admin-menu-item.active {
+  background: rgba(137, 66, 255, 0.12);
+  color: #b46cff;
+}
+
+.admin-exit {
+  margin-top: auto;
+  padding: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  background: transparent;
+  color: #707990;
+  cursor: pointer;
+}
+
+/* ANA İÇERİK */
+
+.admin-content {
+  flex: 1;
+  min-width: 0;
+  padding: 45px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-page-label {
+  color: #a855f7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.admin-header h1 {
+  margin: 7px 0;
+  font-size: 32px;
+}
+
+.admin-header p {
+  margin: 0;
+  color: #747e96;
+  font-size: 12px;
+}
+
+.add-question-button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(100deg, #9d30ff, #315cff);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* İSTATİSTİKLER */
+
+.admin-stats {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.admin-stat-card {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.stat-title {
+  display: block;
+  color: #707990;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.admin-stat-card strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 30px;
+}
+
+.admin-stat-card small {
+  color: #656f87;
+  font-size: 9px;
+}
+
+/* TABLO */
+
+.question-management {
+  margin-top: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.table-header span {
+  color: #68738b;
+  font-size: 9px;
+}
+
+.question-search {
+  width: 220px;
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  font-size: 11px;
+}
+
+.question-table {
+  width: 100%;
+  min-width: 800px;
+}
+
+.table-row {
+  min-height: 65px;
+  display: grid;
+  grid-template-columns: 70px 1fr 180px 150px;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+}
+
+.table-head {
+  min-height: 45px;
+  color: #626c84;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.question-id {
+  color: #a855f7;
+  font-weight: 800;
+}
+
+.question-text {
+  color: #d5d9e3;
+}
+
+.question-answer {
+  color: #7f89a1;
+}
+
+.question-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.question-actions button {
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.edit-button {
+  border: 1px solid rgba(80, 130, 255, 0.25);
+  background: rgba(80, 130, 255, 0.08);
+  color: #70a0ff;
+}
+
+.delete-button {
+  border: 1px solid rgba(255, 80, 90, 0.25);
+  background: rgba(255, 80, 90, 0.07);
+  color: #ff6972;
+}
+
+/* YÜKLENİYOR / HATA / BOŞ */
+
+.admin-loading,
+.admin-error,
+.admin-empty {
+  padding: 50px 20px;
+  text-align: center;
+  color: #737e96;
+  font-size: 12px;
+}
+
+.admin-error {
+  color: #ff6972;
+}
+
+/* MOBİL */
+
+@media (max-width: 800px) {
+
+  .admin-sidebar {
+    width: 70px;
+    padding: 15px 8px;
+  }
+
+  .admin-logo div:not(.admin-logo-icon) {
+    display: none;
+  }
+
+  .admin-menu-item {
+    justify-content: center;
+    font-size: 0;
+  }
+
+  .admin-exit {
+    font-size: 0;
+  }
+
+  .admin-content {
+    padding: 25px 15px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .table-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .question-search {
+    width: 100%;
+  }
+  /* SİLME MODALI */
+
+.delete-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  backdrop-filter: blur(8px);
+}
+
+.delete-modal {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 32px;
+
+  border: 1px solid rgba(255, 80, 90, 0.2);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #11172a,
+      #080d1b
+    );
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.6);
+
+  text-align: center;
+}
+
+.delete-modal-icon {
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 70, 80, 0.1);
+
+  border: 1px solid rgba(255, 70, 80, 0.2);
+
+  color: #ff6972;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.delete-modal-label {
+  color: #ff6972;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.delete-modal h2 {
+  margin: 10px 0;
+
+  color: white;
+
+  font-size: 20px;
+}
+
+.delete-modal p {
+  margin: 0;
+
+  color: #737d94;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+.delete-question-preview {
+  margin-top: 20px;
+
+  padding: 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #cbd0dc;
+
+  font-size: 10px;
+
+  text-align: left;
+}
+
+.delete-modal-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.delete-modal-buttons button {
+  flex: 1;
+
+  height: 45px;
+
+  border-radius: 9px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.delete-cancel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #8993a9;
+}
+
+.delete-confirm {
+  border: none;
+
+  background: linear-gradient(
+    100deg,
+    #ff4757,
+    #d9263b
+  );
+
+  color: white;
+
+  box-shadow:
+    0 8px 25px rgba(255, 50, 70, 0.2);
+}
+
+.delete-confirm:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 500px) {
+
+  .delete-modal {
+    padding: 25px 18px;
+  }
+
+  .delete-modal-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .delete-modal-buttons button {
+    width: 100%;
+  }
+}
+}

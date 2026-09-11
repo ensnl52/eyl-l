@@ -1,0 +1,558 @@
+* {
+  box-sizing: border-box;
+}
+
+.guest-page {
+  min-height: 100vh;
+  background: #07070c;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   ARKA PLAN IŞIKLARI
+========================= */
+
+.guest-page::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  background: #6d28d9;
+
+  opacity: 0.15;
+
+  filter: blur(150px);
+
+  border-radius: 50%;
+
+  top: -250px;
+  left: -150px;
+}
+
+.guest-page::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: #2563eb;
+
+  opacity: 0.12;
+
+  filter: blur(150px);
+
+  border-radius: 50%;
+
+  right: -150px;
+  bottom: -200px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.guest-header {
+  height: 90px;
+
+  padding: 0 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.guest-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.guest-logo-box {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #7c3aed;
+
+  border-radius: 12px;
+
+  font-size: 22px;
+
+  box-shadow:
+    0 0 25px rgba(124, 58, 237, 0.4);
+}
+
+.guest-logo h2 {
+  margin: 0;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.guest-logo span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+
+  color: #8b8b9b;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   KULLANICI BUTONU
+========================= */
+
+.guest-user-button {
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid #292936;
+
+  border-radius: 50%;
+
+  background: #11111a;
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.guest-user-button:hover {
+  background: #7c3aed;
+
+  border-color: #7c3aed;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 25px rgba(124, 58, 237, 0.5);
+}
+
+
+/* =========================
+   ANA İÇERİK
+========================= */
+
+.guest-main {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 70px 20px 35px;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.guest-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 14px;
+
+  border: 1px solid #30204d;
+
+  border-radius: 30px;
+
+  background: rgba(124, 58, 237, 0.08);
+
+  color: #b9a3ff;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+.guest-badge span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 12px #8b5cf6;
+}
+
+
+/* =========================
+   ANA BAŞLIK
+========================= */
+
+.guest-main h1 {
+  margin-top: 28px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(42px, 5.5vw, 68px);
+
+  line-height: 0.95;
+
+  font-weight: 900;
+
+  letter-spacing: -3px;
+}
+
+.guest-main h1 strong {
+  color: #8b5cf6;
+
+  text-shadow:
+    0 0 20px rgba(139, 92, 246, 0.5),
+    0 0 50px rgba(139, 92, 246, 0.2);
+}
+
+
+/* =========================
+   AÇIKLAMA
+========================= */
+
+.guest-main p {
+  max-width: 520px;
+
+  margin: 0 auto;
+
+  color: #9292a3;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   NICK INPUT
+========================= */
+
+.guest-nick {
+  width: 100%;
+
+  max-width: 400px;
+
+  margin: 28px auto 0;
+
+  position: relative;
+}
+
+.guest-nick input {
+  width: 100%;
+
+  height: 56px;
+
+  padding: 0 22px;
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+
+  border-radius: 15px;
+
+  background: rgba(17, 17, 26, 0.85);
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  text-align: center;
+
+  outline: none;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.guest-nick input::placeholder {
+  color: #77778b;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+
+/* INPUT HOVER */
+
+.guest-nick input:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+
+  background: rgba(20, 20, 31, 0.95);
+}
+
+
+/* INPUT FOCUS */
+
+.guest-nick input:focus {
+  border-color: #8b5cf6;
+
+  background: rgba(18, 18, 29, 0.98);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 0 3px rgba(139, 92, 246, 0.10),
+    0 0 35px rgba(124, 58, 237, 0.25),
+    0 15px 40px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================
+   BUTONLAR
+========================= */
+
+.guest-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.guest-start-button,
+.guest-register-button {
+  height: 50px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  width: auto;
+}
+
+
+/* =========================
+   OYUNA BAŞLA
+========================= */
+
+.guest-start-button {
+  border: none;
+
+  background: #7c3aed;
+
+  color: white;
+
+  box-shadow:
+    0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+.guest-start-button span {
+  margin-left: 10px;
+
+  font-size: 16px;
+}
+
+.guest-start-button:hover {
+  background: #8b5cf6;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px rgba(124, 58, 237, 0.5);
+}
+
+
+/* =========================
+   HESAP OLUŞTUR
+========================= */
+
+.guest-register-button {
+  border: 1px solid #30303d;
+
+  background: #11111a;
+
+  color: #d1d1dc;
+}
+
+.guest-register-button:hover {
+  border-color: #7c3aed;
+
+  color: white;
+
+  transform: translateY(-3px);
+
+  background: #171321;
+}
+
+
+/* =========================
+   ALT ÖZELLİKLER
+========================= */
+
+.guest-features {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 50px;
+
+  margin-top: 50px;
+}
+
+.guest-features div {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.guest-features strong {
+  font-size: 20px;
+
+  color: #eeeeF5;
+}
+
+.guest-features span {
+  font-size: 9px;
+
+  color: #707080;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (max-width: 700px) {
+
+  .guest-header {
+    padding: 0 20px;
+  }
+
+  .guest-main {
+    padding-top: 55px;
+  }
+
+  .guest-main h1 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+  .guest-main p {
+    font-size: 13px;
+  }
+
+  .guest-nick {
+    max-width: 90%;
+
+    margin-top: 25px;
+  }
+
+  .guest-nick input {
+    height: 52px;
+
+    font-size: 15px;
+  }
+
+  .guest-buttons {
+    flex-direction: column;
+
+    margin-top: 18px;
+  }
+
+  .guest-start-button,
+  .guest-register-button {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+  .guest-features {
+    gap: 30px;
+
+    margin-top: 45px;
+  }
+
+  .guest-features strong {
+    font-size: 18px;
+  }
+
+  .guest-logo h2 {
+    font-size: 16px;
+  }
+
+  .guest-logo span {
+    font-size: 8px;
+  }
+}
