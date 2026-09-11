@@ -1,0 +1,276 @@
+[
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "AdminYap",
+    "RelativePath": "api/Auth/admin-yap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciAdi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "Durum",
+    "RelativePath": "api/Auth/durum",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "Guest",
+    "RelativePath": "api/Auth/guest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciAdi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CanliSoruBackend.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "LoginDogrula",
+    "RelativePath": "api/Auth/login-dogrula",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciAdi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "kod",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CanliSoruBackend.Models.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "OyunuBaslat",
+    "RelativePath": "api/Oyun/{oyunId}/baslat-oyun",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "HazirOl",
+    "RelativePath": "api/Oyun/{oyunId}/hazir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "HazirKontrol",
+    "RelativePath": "api/Oyun/{oyunId}/hazir-kontrol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "OyunculariGetir",
+    "RelativePath": "api/Oyun/{oyunId}/oyuncular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "SoruBaslat",
+    "RelativePath": "api/Oyun/{oyunId}/soru/{soruId}/baslat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "soruId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "OyunSorulariGetir",
+    "RelativePath": "api/Oyun/{oyunId}/sorular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oyunId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "OyunBaslat",
+    "RelativePath": "api/Oyun/baslat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "Cevapla",
+    "RelativePath": "api/Oyun/cevapla",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cevap",
+        "Type": "CanliSoruBackend.Models.OyunCevap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.OyunController",
+    "Method": "OyunaKatil",
+    "RelativePath": "api/Oyun/katil",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "odaKodu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.SoruController",
+    "Method": "SorulariGetir",
+    "RelativePath": "api/Soru",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.SoruController",
+    "Method": "SoruEkle",
+    "RelativePath": "api/Soru",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CanliSoruBackend.ViewModels.Soru.SoruEkleViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CanliSoruBackend.Controllers.SoruController",
+    "Method": "RastgeleSoru",
+    "RelativePath": "api/Soru/rastgele",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
