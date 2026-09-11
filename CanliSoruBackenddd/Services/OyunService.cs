@@ -7,17 +7,21 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 namespace CanliSoruBackend.Services
 {
+
     public class OyunService : IOyunService
     {
         private readonly AppDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly OyunOrkestrator _orkestrator;
 
         public OyunService(
             AppDbContext context,
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+            OyunOrkestrator orkestrator)
         {
             _context = context;
             _userManager = userManager;
+            _orkestrator = orkestrator;
         }
 
         public async Task<OyunBaslatViewModel> OyunuBaslatAsync(
@@ -92,12 +96,16 @@ namespace CanliSoruBackend.Services
 
             await _context.SaveChangesAsync();
 
+            _orkestrator.Baslat(oyun.Id, oyun.OdaKodu, oyun.BaslangicZamani);
+
             return new OyunBaslatViewModel
             {
                 BasariliMi = true,
                 Mesaj = "Oyun başarıyla başlatıldı.",
                 OyunId = oyun.Id,
                 OdaKodu = oyun.OdaKodu
+                BasladiMi = true,
+                BaslangicZamani = oyun.BaslangicZamani
             };
         }
 

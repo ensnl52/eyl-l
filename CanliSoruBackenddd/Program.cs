@@ -113,6 +113,8 @@ builder.Services.AddScoped<IOyunService, OyunService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISoruService, SoruService>();
 
+builder.Services.AddSingleton<OyunOrkestrator>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

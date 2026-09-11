@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CanliSoruBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23b87f5fa969535531d99bc7e7a34ea1da9081db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+773129674dab4314dff4567e1a35c02930777563")]
 [assembly: System.Reflection.AssemblyProductAttribute("CanliSoruBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CanliSoruBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
