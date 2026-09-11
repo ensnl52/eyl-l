@@ -163,10 +163,10 @@ C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\staticweb
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\CanliSor.F265682E.Up2Date
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\CanliSoruBackend.dll
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\refint\CanliSoruBackend.dll
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\CanliSoruBackend.pdb
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\CanliSoruBackend.genruntimeconfig.cache
 C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\ref\CanliSoruBackend.dll
+C:\Users\Enes.Senol\Desktop\tamam\CanliSoruBackenddd\obj\Debug\net10.0\CanliSoruBackend.sourcelink.json
